@@ -11,7 +11,7 @@ if __name__ == "__main__":
             print("{}: {}".format(size, args[size]))
         else:
             print("{} arguments:".format(size))
-            for i in range(0, size):
+            for i in range(1, size + 1):
                 print("{}: {}".format(i, args[i]))
     else:
         print("{} arguments.".format(size))
