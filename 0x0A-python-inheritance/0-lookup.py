@@ -7,6 +7,11 @@ attributes and methods of an object
 
 def lookup(obj):
     """
-    Rerurns list
+    Funtions looks for attributes and methods
+
+    Args:
+        obj (object): Attributes and methods
+    Rerurns:
+        list of attributes
     """
     return dir(obj)
