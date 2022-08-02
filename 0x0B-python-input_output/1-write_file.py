@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 
 """
-Module 1-write_file
+Module 1-write_file.
 
-Writes a string to a text file
+Writes a string to a text file.
 """
 
 def write_file(filename="", text=""):
-    """Function to to write string to text
+    """Function to to write string to text.
 
     Args:
         filename (str): file to write to.

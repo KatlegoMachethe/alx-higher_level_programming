@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 
-"""Module 2-append_write
+"""Module 2-append_write.
 
 The function appends a tring at the
-end of a text file
+end of a text file.
 """
 
 def append_write(filename="", text=""):
-    """This function appends a text to filename.tct
+    """This function appends a text to filename.txt.
 
     Args:
         filename (str): text file to append to.

@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """
-Module 0-read__file
+Module 0-read__file.
 
 Reads file and prints to standard output.
 """
 
 def read_file(filename=""):
-    """ Function read_file
+    """ Function read_file.
     
         This function reads a text file and prints
         it to the standars output.
