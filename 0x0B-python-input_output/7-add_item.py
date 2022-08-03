@@ -6,19 +6,16 @@ Adds all arguments to a python list
 Returns: nothing
 """
 
-import json
-import sys
+from sys import argv
+import os.path
 
-save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
-load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
+if __name__ == "__main__":
+    save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
+    load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
-def add_item(my_list=[]):
-    """Adds arguments to a python list."""
-
-    for i in sys.argv:
-        my_list.append(sys.argv[i])
-
-    with open("add_item.json", "r+") as f:
-        f.write(save_to_json_file(my_list, f))
-
-    return load_from_json_file("add_item.json")
+    try:
+        my_list = load_from_json_file("add_item.json")
+    except FileNotFoundError:
+        my_list = []
+    my_list.extend(argv[1:])
+    save_to_json_file(my_list, "add_item.json")
