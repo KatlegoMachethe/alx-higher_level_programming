@@ -8,7 +8,7 @@ Has class "rectangle" which inherits from "Base"
 from models.base import Base
 
 
-class rectangle(Base):
+class Rectangle(Base):
     """
     Class inherit base
     """
@@ -22,7 +22,7 @@ class rectangle(Base):
         self.__height = height
         self.__x = x
         self.__y = y
-        super().__init__(self, id)
+        super().__init__(id)
 
     @property
     def width(self):
