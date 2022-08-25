@@ -3,8 +3,9 @@
 Module test_base
 Test the Base class with unittest
 """
-from models.Base import Base
+from models.base import Base
 import unittest
+
 
 class TestBase(unittest.TestCase):
 
@@ -16,8 +17,8 @@ class TestBase(unittest.TestCase):
         self.assertEqual(Base(True).id, True)
 
     def test_id_errors(self):
-        self.assertRaise(TypeError, Base, name=0)
-        self.assertRaise(TypeError, Base, 0, 1)
-        self.assertRaise(TypeError, Base, None, None)
-        self.assertRaise(ValueError, Base, (1, 2), (2, 3))
-        self.assertRaise(TypeError, Base, True, False)
+        self.assertRaises(TypeError, Base, name=0)
+        self.assertRaises(TypeError, Base, 0, 1)
+        self.assertRaises(TypeError, Base, None, None)
+        self.assertRaises(TypeError, Base, (1, 2), (2, 3))
+        self.assertRaises(TypeError, Base, True, False)
