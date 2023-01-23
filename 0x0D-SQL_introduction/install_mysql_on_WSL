@@ -1,0 +1,6 @@
+To install and run MySQL on ubuntu 20.04 LTS windows subsystem, type in these commands below into your terminal:
+
+1. sudo apt update
+2. sudo apt install mysql-server
+3. sudo /etc/init.d/mysql start -> sudo service mysql start
+4. sudo mysql or sudo mysql -u root (to open as root user)
