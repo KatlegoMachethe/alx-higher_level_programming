@@ -3,4 +3,4 @@
 -- Challenge: Must not use the DESCRIBE and EXPLAIN statements
 -- @Author: Katlego Machethe
 
-SHOW COLUMNS FROM first_table;
+DESC first_table;
